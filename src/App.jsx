@@ -4,6 +4,7 @@ import Search from './components/Search.jsx';
 import MovieCard from './components/MovieCard.jsx';
 import Spinner from './components/Spinner.jsx';
 import { getTrendingMovies, updateSearchCount } from './appwrite.js';
+import heroImage from './assets/hero.png'; 
 
 
 const useDebounce = (callback, delay, dependencies) => {
@@ -86,7 +87,7 @@ const App = () => {
       <div className="pattern" />
       <div className="wrapper">
         <header>
-          <img src="/hero.png" alt="Hero Banner" />
+          <img src={heroImage} alt="Hero Banner" />
           <h1>
             Find <span className="text-gradient">Movies</span> You'll Enjoy Without the Hassle
           </h1>

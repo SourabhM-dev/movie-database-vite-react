@@ -1,13 +1,13 @@
 import React from 'react';
+import noMoviePoster from '../assets/no-movie.png';
 
 const MovieCard = ({ movie: { Title, Year, Poster, Type } }) => {
   return (
     <div className="movie-card">
       <img
-        src={Poster !== 'N/A' ? Poster : '/no-movie.png'}
+        src={Poster !== 'N/A' ? Poster : noMoviePoster}
         alt={Title}
       />
-
       <div className="mt-4">
         <h3>{Title}</h3>
 
